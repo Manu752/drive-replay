@@ -1,0 +1,22 @@
+{
+  "name": "drive-replay",
+  "version": "1.0.0",
+  "description": "Driving data replay dashboard with playback controls, speed, steering and telemetry visualisation (2022)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "autonomous-driving",
+    "telemetry",
+    "replay",
+    "nuscenes",
+    "hud",
+    "motion-prediction"
+  ],
+  "author": "Manu752",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

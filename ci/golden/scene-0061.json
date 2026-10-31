@@ -1,0 +1,9 @@
+{
+ "scene": "scene-0061",
+ "stack_version": "0.2.0",
+ "commit": "ace81022635b",
+ "reason": "BUG-0001 and BUG-0002 fixed (reviewed: the removed warnings are the false ones in the tickets)",
+ "event_digest": "14650fb0739d0383",
+ "state_digest": "9d032bb01d9a1805",
+ "events": []
+}

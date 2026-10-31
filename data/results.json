@@ -1,0 +1,1443 @@
+{
+ "generated": "2026-09-29",
+ "commit": "a66981d8402a",
+ "cpu": "AMD EPYC 7R13 Processor",
+ "ci": [
+  {
+   "drop": "v0.1.0",
+   "commit": "45b71befcf41",
+   "verdict": "FAIL",
+   "failed checks": 4,
+   "suite wall s": 1.06,
+   "false warnings": 3,
+   "missed threats": 0,
+   "_fails": [
+    "scene-0061: requirements (1 warning(s), 1 false, 0 missed)",
+    "scene-0061: regression (vs golden from 0.2.0: new fcw_warning_on at 6.81 s (TTC 2.07 s); new fcw_warning_off at 7.26 s (TTC 3.77 s))",
+    "scene-0103: requirements (2 warning(s), 2 false, 0 missed)",
+    "scene-0103: regression (vs golden from 0.2.0: new fcw_warning_on at 0.59 s (TTC 2.04 s); new fcw_warning_off at 1.40 s (TTC 0.00 s); new fcw_warning_on at 1.98 s (TTC 2.09 s); new fcw_warning_off at 2.71 s (TTC 4.25 s))"
+   ]
+  },
+  {
+   "drop": "candidate be3c4e4",
+   "commit": "be3c4e4ee1af",
+   "verdict": "FAIL",
+   "failed checks": 4,
+   "suite wall s": 0.98,
+   "false warnings": 2,
+   "missed threats": 0,
+   "_fails": [
+    "scene-0916: requirements (1 warning(s), 1 false, 0 missed)",
+    "scene-0916: regression (vs golden from 0.1.0: new fcw_warning_on at 9.41 s (TTC 1.93 s); new fcw_warning_off at 10.24 s (TTC 5.11 s))",
+    "scene-1094: requirements (1 warning(s), 1 false, 0 missed)",
+    "scene-1094: regression (vs golden from 0.1.0: new fcw_warning_on at 8.03 s (TTC 1.98 s); new fcw_warning_off at 8.33 s (TTC 0.00 s))"
+   ]
+  },
+  {
+   "drop": "v0.2.0",
+   "commit": "397839da5376",
+   "verdict": "PASS",
+   "failed checks": 0,
+   "suite wall s": 0.93,
+   "false warnings": 0,
+   "missed threats": 0,
+   "_fails": []
+  },
+  {
+   "drop": "demo/silent-regression",
+   "commit": "7be32c304993",
+   "verdict": "FAIL",
+   "failed checks": 3,
+   "suite wall s": 0.94,
+   "false warnings": 0,
+   "missed threats": 0,
+   "_fails": [
+    "scene-0796-stopped-car: regression (vs golden from 0.2.0: missing fcw_warning_on at 9.84 s; new fcw_warning_on at 9.99 s (TTC 1.98 s))",
+    "scene-1077-stopped-car: regression (vs golden from 0.2.0: missing fcw_warning_on at 11.93 s; new fcw_warning_on at 12.08 s (TTC 1.95 s))",
+    "scene-0655-braking-lead: regression (vs golden from 0.2.0: missing fcw_warning_on at 9.96 s; new fcw_warning_on at 10.11 s (TTC 1.81 s))"
+   ]
+  }
+ ],
+ "bugs": [
+  {
+   "bug": "BUG-0001",
+   "recording": "scene-0103",
+   "reported on": "0.1.0",
+   "fixed in": "0.2.0",
+   "reproduced": true,
+   "window fidelity": "identical",
+   "fix confirmed": true,
+   "verdict": "REPRODUCED and FIX CONFIRMED"
+  },
+  {
+   "bug": "BUG-0002",
+   "recording": "scene-0061",
+   "reported on": "0.1.0",
+   "fixed in": "0.2.0",
+   "reproduced": true,
+   "window fidelity": "identical",
+   "fix confirmed": true,
+   "verdict": "REPRODUCED and FIX CONFIRMED"
+  },
+  {
+   "bug": "BUG-0003",
+   "recording": "scene-0916",
+   "reported on": "be3c4e4",
+   "fixed in": "0.2.0",
+   "reproduced": true,
+   "window fidelity": "identical",
+   "fix confirmed": true,
+   "verdict": "REPRODUCED and FIX CONFIRMED"
+  }
+ ],
+ "preroll": [
+  {
+   "scene": "scene-0061",
+   "event_s": 6.81,
+   "preroll_s": 0.0,
+   "identical": false,
+   "first_warning_s": 7.03
+  },
+  {
+   "scene": "scene-0061",
+   "event_s": 6.81,
+   "preroll_s": 0.1,
+   "identical": false,
+   "first_warning_s": 6.88
+  },
+  {
+   "scene": "scene-0061",
+   "event_s": 6.81,
+   "preroll_s": 0.25,
+   "identical": true,
+   "first_warning_s": 6.81
+  },
+  {
+   "scene": "scene-0061",
+   "event_s": 6.81,
+   "preroll_s": 0.5,
+   "identical": true,
+   "first_warning_s": 6.81
+  },
+  {
+   "scene": "scene-0061",
+   "event_s": 6.81,
+   "preroll_s": 1.0,
+   "identical": true,
+   "first_warning_s": 6.81
+  },
+  {
+   "scene": "scene-0061",
+   "event_s": 6.81,
+   "preroll_s": 2.0,
+   "identical": true,
+   "first_warning_s": 6.81
+  },
+  {
+   "scene": "scene-0061",
+   "event_s": 6.81,
+   "preroll_s": 3.0,
+   "identical": true,
+   "first_warning_s": 6.81
+  },
+  {
+   "scene": "scene-0103",
+   "event_s": 1.98,
+   "preroll_s": 0.0,
+   "identical": false,
+   "first_warning_s": 2.12
+  },
+  {
+   "scene": "scene-0103",
+   "event_s": 1.98,
+   "preroll_s": 0.1,
+   "identical": false,
+   "first_warning_s": 2.05
+  },
+  {
+   "scene": "scene-0103",
+   "event_s": 1.98,
+   "preroll_s": 0.25,
+   "identical": true,
+   "first_warning_s": 1.98
+  },
+  {
+   "scene": "scene-0103",
+   "event_s": 1.98,
+   "preroll_s": 0.5,
+   "identical": true,
+   "first_warning_s": 1.98
+  },
+  {
+   "scene": "scene-0103",
+   "event_s": 1.98,
+   "preroll_s": 1.0,
+   "identical": true,
+   "first_warning_s": 1.98
+  },
+  {
+   "scene": "scene-0103",
+   "event_s": 1.98,
+   "preroll_s": 2.0,
+   "identical": true,
+   "first_warning_s": 1.98
+  },
+  {
+   "scene": "scene-0103",
+   "event_s": 1.98,
+   "preroll_s": 3.0,
+   "identical": true,
+   "first_warning_s": 1.98
+  },
+  {
+   "scene": "scene-0796-stopped-car",
+   "event_s": 9.84,
+   "preroll_s": 0.0,
+   "identical": false,
+   "first_warning_s": 9.99
+  },
+  {
+   "scene": "scene-0796-stopped-car",
+   "event_s": 9.84,
+   "preroll_s": 0.1,
+   "identical": false,
+   "first_warning_s": 9.92
+  },
+  {
+   "scene": "scene-0796-stopped-car",
+   "event_s": 9.84,
+   "preroll_s": 0.25,
+   "identical": true,
+   "first_warning_s": 9.84
+  },
+  {
+   "scene": "scene-0796-stopped-car",
+   "event_s": 9.84,
+   "preroll_s": 0.5,
+   "identical": true,
+   "first_warning_s": 9.84
+  },
+  {
+   "scene": "scene-0796-stopped-car",
+   "event_s": 9.84,
+   "preroll_s": 1.0,
+   "identical": false,
+   "first_warning_s": 9.92
+  },
+  {
+   "scene": "scene-0796-stopped-car",
+   "event_s": 9.84,
+   "preroll_s": 2.0,
+   "identical": true,
+   "first_warning_s": 9.84
+  },
+  {
+   "scene": "scene-0796-stopped-car",
+   "event_s": 9.84,
+   "preroll_s": 3.0,
+   "identical": true,
+   "first_warning_s": 9.84
+  },
+  {
+   "scene": "scene-0655-braking-lead",
+   "event_s": 9.96,
+   "preroll_s": 0.0,
+   "identical": false,
+   "first_warning_s": 10.18
+  },
+  {
+   "scene": "scene-0655-braking-lead",
+   "event_s": 9.96,
+   "preroll_s": 0.1,
+   "identical": false,
+   "first_warning_s": 10.03
+  },
+  {
+   "scene": "scene-0655-braking-lead",
+   "event_s": 9.96,
+   "preroll_s": 0.25,
+   "identical": true,
+   "first_warning_s": 9.96
+  },
+  {
+   "scene": "scene-0655-braking-lead",
+   "event_s": 9.96,
+   "preroll_s": 0.5,
+   "identical": true,
+   "first_warning_s": 9.96
+  },
+  {
+   "scene": "scene-0655-braking-lead",
+   "event_s": 9.96,
+   "preroll_s": 1.0,
+   "identical": true,
+   "first_warning_s": 9.96
+  },
+  {
+   "scene": "scene-0655-braking-lead",
+   "event_s": 9.96,
+   "preroll_s": 2.0,
+   "identical": true,
+   "first_warning_s": 9.96
+  },
+  {
+   "scene": "scene-0655-braking-lead",
+   "event_s": 9.96,
+   "preroll_s": 3.0,
+   "identical": true,
+   "first_warning_s": 9.96
+  }
+ ],
+ "throughput": [
+  {
+   "jobs": 1,
+   "runs": 130,
+   "recorded_s": 2560.8,
+   "wall_s": 21.2,
+   "x_realtime": 120.8,
+   "distinct_digests": 13,
+   "recordings": 13
+  },
+  {
+   "jobs": 4,
+   "runs": 130,
+   "recorded_s": 2560.8,
+   "wall_s": 5.64,
+   "x_realtime": 454.2,
+   "distinct_digests": 13,
+   "recordings": 13
+  },
+  {
+   "jobs": 16,
+   "runs": 130,
+   "recorded_s": 2560.8,
+   "wall_s": 1.93,
+   "x_realtime": 1329.4,
+   "distinct_digests": 13,
+   "recordings": 13
+  },
+  {
+   "jobs": 32,
+   "runs": 130,
+   "recorded_s": 2560.8,
+   "wall_s": 1.55,
+   "x_realtime": 1657.0,
+   "distinct_digests": 13,
+   "recordings": 13
+  }
+ ],
+ "rerun_identical": true,
+ "ci_tables": {
+  "v0.1.0": "## Replay CI: FAIL\n\nDrop `v0.1.0-45b71befcf41` (stack 0.1.0, commit 45b71befcf41), 13 recordings, 1.06 s\n\n| recording | verdict | runs | deterministic | requirements | regression |\n|---|---|---|---|---|---|\n| scene-0061 | **FAIL** | PASS | PASS | **FAIL** | **FAIL** |\n| scene-0103 | **FAIL** | PASS | PASS | **FAIL** | **FAIL** |\n| scene-0553 | PASS | PASS | PASS | PASS | PASS |\n| scene-0655 | PASS | PASS | PASS | PASS | PASS |\n| scene-0757 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796 | PASS | PASS | PASS | PASS | PASS |\n| scene-0916 | PASS | PASS | PASS | PASS | PASS |\n| scene-1077 | PASS | PASS | PASS | PASS | PASS |\n| scene-1094 | PASS | PASS | PASS | PASS | PASS |\n| scene-1100 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796-stopped-car | PASS | PASS | PASS | PASS | PASS |\n| scene-1077-stopped-car | PASS | PASS | PASS | PASS | PASS |\n| scene-0655-braking-lead | PASS | PASS | PASS | PASS | PASS |\n\n- scene-0061 / requirements: FAIL - 1 warning(s), 1 false, 0 missed\n- scene-0061 / regression: FAIL - vs golden from 0.2.0: new fcw_warning_on at 6.81 s (TTC 2.07 s); new fcw_warning_off at 7.26 s (TTC 3.77 s)\n- scene-0103 / requirements: FAIL - 2 warning(s), 2 false, 0 missed\n- scene-0103 / regression: FAIL - vs golden from 0.2.0: new fcw_warning_on at 0.59 s (TTC 2.04 s); new fcw_warning_off at 1.40 s (TTC 0.00 s); new fcw_warning_on at 1.98 s (TTC 2.09 s); new fcw_warning_off at 2.71 s (TTC 4.25 s)\n",
+  "candidate be3c4e4": "## Replay CI: FAIL\n\nDrop `v0.2.0-be3c4e4ee1af` (stack 0.2.0, commit be3c4e4ee1af), 13 recordings, 0.98 s\n\n| recording | verdict | runs | deterministic | requirements | regression |\n|---|---|---|---|---|---|\n| scene-0061 | PASS | PASS | PASS | PASS | PASS |\n| scene-0103 | PASS | PASS | PASS | PASS | PASS |\n| scene-0553 | PASS | PASS | PASS | PASS | PASS |\n| scene-0655 | PASS | PASS | PASS | PASS | PASS |\n| scene-0757 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796 | PASS | PASS | PASS | PASS | PASS |\n| scene-0916 | **FAIL** | PASS | PASS | **FAIL** | **FAIL** |\n| scene-1077 | PASS | PASS | PASS | PASS | PASS |\n| scene-1094 | **FAIL** | PASS | PASS | **FAIL** | **FAIL** |\n| scene-1100 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796-stopped-car | PASS | PASS | PASS | PASS | PASS |\n| scene-1077-stopped-car | PASS | PASS | PASS | PASS | PASS |\n| scene-0655-braking-lead | PASS | PASS | PASS | PASS | PASS |\n\n- scene-0916 / requirements: FAIL - 1 warning(s), 1 false, 0 missed\n- scene-0916 / regression: FAIL - vs golden from 0.1.0: new fcw_warning_on at 9.41 s (TTC 1.93 s); new fcw_warning_off at 10.24 s (TTC 5.11 s)\n- scene-1094 / requirements: FAIL - 1 warning(s), 1 false, 0 missed\n- scene-1094 / regression: FAIL - vs golden from 0.1.0: new fcw_warning_on at 8.03 s (TTC 1.98 s); new fcw_warning_off at 8.33 s (TTC 0.00 s)\n",
+  "v0.2.0": "## Replay CI: PASS\n\nDrop `v0.2.0-397839da5376` (stack 0.2.0, commit 397839da5376), 13 recordings, 0.93 s\n\n| recording | verdict | runs | deterministic | requirements | regression |\n|---|---|---|---|---|---|\n| scene-0061 | PASS | PASS | PASS | PASS | PASS |\n| scene-0103 | PASS | PASS | PASS | PASS | PASS |\n| scene-0553 | PASS | PASS | PASS | PASS | PASS |\n| scene-0655 | PASS | PASS | PASS | PASS | PASS |\n| scene-0757 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796 | PASS | PASS | PASS | PASS | PASS |\n| scene-0916 | PASS | PASS | PASS | PASS | PASS |\n| scene-1077 | PASS | PASS | PASS | PASS | PASS |\n| scene-1094 | PASS | PASS | PASS | PASS | PASS |\n| scene-1100 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796-stopped-car | PASS | PASS | PASS | PASS | PASS |\n| scene-1077-stopped-car | PASS | PASS | PASS | PASS | PASS |\n| scene-0655-braking-lead | PASS | PASS | PASS | PASS | PASS |\n\n",
+  "demo/silent-regression": "## Replay CI: FAIL\n\nDrop `v0.2.0-7be32c304993` (stack 0.2.0, commit 7be32c304993), 13 recordings, 0.94 s\n\n| recording | verdict | runs | deterministic | requirements | regression |\n|---|---|---|---|---|---|\n| scene-0061 | PASS | PASS | PASS | PASS | PASS |\n| scene-0103 | PASS | PASS | PASS | PASS | PASS |\n| scene-0553 | PASS | PASS | PASS | PASS | PASS |\n| scene-0655 | PASS | PASS | PASS | PASS | PASS |\n| scene-0757 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796 | PASS | PASS | PASS | PASS | PASS |\n| scene-0916 | PASS | PASS | PASS | PASS | PASS |\n| scene-1077 | PASS | PASS | PASS | PASS | PASS |\n| scene-1094 | PASS | PASS | PASS | PASS | PASS |\n| scene-1100 | PASS | PASS | PASS | PASS | PASS |\n| scene-0796-stopped-car | **FAIL** | PASS | PASS | PASS | **FAIL** |\n| scene-1077-stopped-car | **FAIL** | PASS | PASS | PASS | **FAIL** |\n| scene-0655-braking-lead | **FAIL** | PASS | PASS | PASS | **FAIL** |\n\n- scene-0796-stopped-car / regression: FAIL - vs golden from 0.2.0: missing fcw_warning_on at 9.84 s; new fcw_warning_on at 9.99 s (TTC 1.98 s)\n- scene-1077-stopped-car / regression: FAIL - vs golden from 0.2.0: missing fcw_warning_on at 11.93 s; new fcw_warning_on at 12.08 s (TTC 1.95 s)\n- scene-0655-braking-lead / regression: FAIL - vs golden from 0.2.0: missing fcw_warning_on at 9.96 s; new fcw_warning_on at 10.11 s (TTC 1.81 s)\n"
+ },
+ "ci_matrix": {
+  "v0.1.0": {
+   "scene-0061": {
+    "verdict": "FAIL",
+    "checks": {
+     "runs": [
+      "PASS",
+      "247 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 608010ca66789fed"
+     ],
+     "requirements": [
+      "FAIL",
+      "1 warning(s), 1 false, 0 missed"
+     ],
+     "regression": [
+      "FAIL",
+      "vs golden from 0.2.0: new fcw_warning_on at 6.81 s (TTC 2.07 s); new fcw_warning_off at 7.26 s (TTC 3.77 s)"
+     ]
+    }
+   },
+   "scene-0103": {
+    "verdict": "FAIL",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest d0afd738e024f045"
+     ],
+     "requirements": [
+      "FAIL",
+      "2 warning(s), 2 false, 0 missed"
+     ],
+     "regression": [
+      "FAIL",
+      "vs golden from 0.2.0: new fcw_warning_on at 0.59 s (TTC 2.04 s); new fcw_warning_off at 1.40 s (TTC 0.00 s); new fcw_warning_on at 1.98 s (TTC 2.09 s); new fcw_warning_off at 2.71 s (TTC 4.25 s)"
+     ]
+    }
+   },
+   "scene-0553": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "272 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest cfdea11925ac7865"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0655": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 2f21d34bd1eeccd8"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0757": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "271 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest e39e9810b8f66b3f"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0796": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 9b833a97e62a8917"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0916": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "265 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 3f2e63e41cf0f122"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-1077": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 4b3269925e05cb13"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-1094": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "259 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest a9a1b4f81f8bce3f"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-1100": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "257 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest e33aa3871da9d675"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0796-stopped-car": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest d941a504b50a410f"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1077-stopped-car": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest d8a514c3c23ca58d"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0655-braking-lead": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 4948500d995e6207"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   }
+  },
+  "candidate be3c4e4": {
+   "scene-0061": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "247 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 963c563b806f2ec7"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0103": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest a51a9b9fbbcd63ed"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0553": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "272 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest cfdea11925ac7865"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0655": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 8144cc179b5fa4c7"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0757": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "271 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest b435f07016b2f41e"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0796": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 6400a9341f02a7e2"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0916": {
+    "verdict": "FAIL",
+    "checks": {
+     "runs": [
+      "PASS",
+      "265 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 2004107d872ace43"
+     ],
+     "requirements": [
+      "FAIL",
+      "1 warning(s), 1 false, 0 missed"
+     ],
+     "regression": [
+      "FAIL",
+      "vs golden from 0.1.0: new fcw_warning_on at 9.41 s (TTC 1.93 s); new fcw_warning_off at 10.24 s (TTC 5.11 s)"
+     ]
+    }
+   },
+   "scene-1077": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 26c40d0bd5441960"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1094": {
+    "verdict": "FAIL",
+    "checks": {
+     "runs": [
+      "PASS",
+      "259 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 12c458b5cb2a90df"
+     ],
+     "requirements": [
+      "FAIL",
+      "1 warning(s), 1 false, 0 missed"
+     ],
+     "regression": [
+      "FAIL",
+      "vs golden from 0.1.0: new fcw_warning_on at 8.03 s (TTC 1.98 s); new fcw_warning_off at 8.33 s (TTC 0.00 s)"
+     ]
+    }
+   },
+   "scene-1100": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "257 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest e33aa3871da9d675"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0796-stopped-car": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 4ff82d28a70ab66b"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1077-stopped-car": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 0877a77d6163c981"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0655-braking-lead": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 25bd88c2d2b2292a"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   }
+  },
+  "v0.2.0": {
+   "scene-0061": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "247 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 9d032bb01d9a1805"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0103": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 7d35aadff45fcdd2"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0553": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "272 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest cfdea11925ac7865"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0655": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 75a964e980bff5ea"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0757": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "271 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest c258195e3b62769c"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0796": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest e36c9cb68ec6077b"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0916": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "265 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 071cf02986dc2d96"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1077": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 0d7bad14e33b4636"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1094": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "259 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 9b1ea715b2e83cb2"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1100": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "257 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest e33aa3871da9d675"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0796-stopped-car": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest c785a66f8e950dc9"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-1077-stopped-car": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 69e50cbc884ca1da"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0655-braking-lead": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 06c96e3f24d739ca"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   }
+  },
+  "demo/silent-regression": {
+   "scene-0061": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "247 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 9d032bb01d9a1805"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0103": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 7d35aadff45fcdd2"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0553": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "272 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest cfdea11925ac7865"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0655": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 75a964e980bff5ea"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0757": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "271 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest c258195e3b62769c"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0796": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest e36c9cb68ec6077b"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-0916": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "265 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 071cf02986dc2d96"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1077": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 0d7bad14e33b4636"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1094": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "259 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 9b1ea715b2e83cb2"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden (internal state changed, events did not)"
+     ]
+    }
+   },
+   "scene-1100": {
+    "verdict": "PASS",
+    "checks": {
+     "runs": [
+      "PASS",
+      "257 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest e33aa3871da9d675"
+     ],
+     "requirements": [
+      "PASS",
+      "0 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "PASS",
+      "events match golden"
+     ]
+    }
+   },
+   "scene-0796-stopped-car": {
+    "verdict": "FAIL",
+    "checks": {
+     "runs": [
+      "PASS",
+      "258 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest f4510c7d23c043b1"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "FAIL",
+      "vs golden from 0.2.0: missing fcw_warning_on at 9.84 s; new fcw_warning_on at 9.99 s (TTC 1.98 s)"
+     ]
+    }
+   },
+   "scene-1077-stopped-car": {
+    "verdict": "FAIL",
+    "checks": {
+     "runs": [
+      "PASS",
+      "266 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 849a456f3ab2ff0e"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "FAIL",
+      "vs golden from 0.2.0: missing fcw_warning_on at 11.93 s; new fcw_warning_on at 12.08 s (TTC 1.95 s)"
+     ]
+    }
+   },
+   "scene-0655-braking-lead": {
+    "verdict": "FAIL",
+    "checks": {
+     "runs": [
+      "PASS",
+      "269 cycles"
+     ],
+     "deterministic": [
+      "PASS",
+      "digest 54a972542398d3b2"
+     ],
+     "requirements": [
+      "PASS",
+      "1 warning(s), 0 false, 0 missed"
+     ],
+     "regression": [
+      "FAIL",
+      "vs golden from 0.2.0: missing fcw_warning_on at 9.96 s; new fcw_warning_on at 10.11 s (TTC 1.81 s)"
+     ]
+    }
+   }
+  }
+ },
+ "bug_reports": {
+  "BUG-0001": "# BUG-0001: FCW warns on oncoming cars on a curving road\n\n- recording: `scene-0103`, window 0.0-3.0 s\n- reported against: stack 0.1.0\n- expectation: `{'kind': 'no_false_warning'}`\n\n| step | drop | expectation holds | detail |\n|---|---|---|---|\n| reported | v0.1.0-45b71befcf41 | NO | 2 false warning(s): t=0.59 s track 84 stack TTC 2.04 s, t=1.98 s track 99 stack TTC 2.09 s |\n| fix-window | v0.2.0-397839da5376 | yes | no false warnings (0 warning(s), all justified by ground truth) |\n| fix-whole-recording | v0.2.0-397839da5376 | yes | 0 false warning(s), 0 missed |\n\nWindow fidelity (window replay vs whole-drive replay on the reported drop): identical events\n\n**Verdict: REPRODUCED and FIX CONFIRMED**\n\nFound by the replay suite on the first drop. Two warnings (0.59 s and 1.98 s) with TTC about 2.0-2.1 s,\nclosing speed about 16 m/s at 8.5 m/s ego speed: the targets move towards the car at about 7-8 m/s over\nground. Ground truth: oncoming cars, which pass 3.7 m to the left. They sat inside the straight corridor\nonly because the road bends. Oncoming traffic is outside the scope of a forward collision warning.\n",
+  "BUG-0002": "# BUG-0002: FCW warns on a construction worker beside the path during a left turn\n\n- recording: `scene-0061`, window 6.5-8.0 s\n- reported against: stack 0.1.0\n- expectation: `{'kind': 'no_false_warning'}`\n\n| step | drop | expectation holds | detail |\n|---|---|---|---|\n| reported | v0.1.0-45b71befcf41 | NO | 1 false warning(s): t=6.81 s track 24 stack TTC 2.07 s |\n| fix-window | v0.2.0-397839da5376 | yes | no false warnings (0 warning(s), all justified by ground truth) |\n| fix-whole-recording | v0.2.0-397839da5376 | yes | 0 false warning(s), 0 missed |\n\nWindow fidelity (window replay vs whole-drive replay on the reported drop): identical events\n\n**Verdict: REPRODUCED and FIX CONFIRMED**\n\nFound by the replay suite on the first drop. Warning at 6.81 s on a stationary target 15.3 m ahead and\n0.86 m to the right, while the car turns left at 0.13 rad/s. The FCW corridor was straight, so it held\nobjects the car was turning away from. At that curvature the driven path is about 3 m further left at 15 m.\n",
+  "BUG-0003": "# BUG-0003: Curved corridor assumes a constant yaw rate and warns on parked cars at the exit of a turn\n\n- recording: `scene-0916`, window 8.5-11.0 s\n- reported against: stack be3c4e4\n- expectation: `{'kind': 'no_false_warning'}`\n\n| step | drop | expectation holds | detail |\n|---|---|---|---|\n| reported | v0.2.0-be3c4e4ee1af | NO | 1 false warning(s): t=9.41 s track 292 stack TTC 1.93 s |\n| fix-window | v0.2.0-397839da5376 | yes | no false warnings (0 warning(s), all justified by ground truth) |\n| fix-whole-recording | v0.2.0-397839da5376 | yes | 0 false warning(s), 0 missed |\n\nWindow fidelity (window replay vs whole-drive replay on the reported drop): identical events\n\n**Verdict: REPRODUCED and FIX CONFIRMED**\n\nFound by the CI suite on release candidate be3c4e4 (the BUG-0001/0002 fix), in recordings the two bug\ntickets never touched: scene-0916 at 9.41 s and scene-1094 at 8.03 s. Both times the car is leaving a turn\n(yaw rate falling from about 0.4 rad/s to 0 within a second), but the arc corridor assumes it keeps turning,\nso parked cars on the outside of the bend fall inside it (scene-0916: car 7.9 m ahead, 3.2 m to the right,\narc at -2.5 m; the car actually drove on to -0.9 m). The focused bug replays of the fix both passed; only\nthe full suite caught it. Fix: predict the path with a yaw rate that decays to zero (time constant 1 s).\n"
+ }
+}
